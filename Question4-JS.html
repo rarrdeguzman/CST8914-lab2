@@ -3,7 +3,6 @@
 
 <head>
     <title>Question 4 - JavaScript</title>
-
 </head>
 
 <body>
@@ -12,11 +11,18 @@
 
     <button onmouseover="myFunction()">Action!</button>
     <p id="demo"></p>
+
+    <script>
+        
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+
+        document.addEventListener('keydown', function (event) {
+            alert('Hello World');
+        });
+
+    </script>
 </body>
-<script>
-    function myFunction() {
-        document.getElementById("demo").innerHTML = "Hello World";
-    }
-</script>
 
 </html>
